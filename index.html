@@ -1,26 +1,187 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Test</title>
-<meta name="description" content="Test">
-<meta property="og:title" content="Test" />
-<meta property="og:description" content="Test">
-<meta property="og:image" content="https://breguethk.github.io/1907/images/RAY_0415_preview.jpg">
-<style type="text/css">
-  body {
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-  }
-  img, video {
-    display: block;
-  }
-</style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Breguet及Goutal品牌故事</title>
+    <meta name="description" content="兩個源於法國巴黎的傳奇品牌 Breguet寶璣及Goutal 首次合作，憑藉悠久歷史的卓越作品，廣受皇室貴族及名人青睞，讓我們一起了解兩個品牌的合作故事。">
+    <meta property="og:title" content="Breguet及Goutal品牌故事" />
+    <meta property="og:description" content="兩個源於法國巴黎的傳奇品牌 Breguet寶璣及Goutal 首次合作，憑藉悠久歷史的卓越作品，廣受皇室貴族及名人青睞，讓我們一起了解兩個品牌的合作故事。">
+    <meta property="og:image" content="https://breguethk.github.io/goutal/images/og_preview.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style type="text/css">
+     body {
+       margin-left: 0px;
+       margin-top: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+     }
+     img, video {
+       display: block;
+     }
+     .form-wrapper {
+       background-image: url(./images/goutal_story_04.jpg);
+       background-color: transparent;
+       background-repeat: no-repeat;
+       background-size: cover;
+       padding-bottom: 40px;
+       padding-top: 25%;
+     }
+     .form-input-field {
+       background-image: url(./images/empty.png);
+       background-color: transparent;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 32px;
+       width: 222px;
+       margin: 0 auto 6px;
+     }
+     .form-select-field {
+       background-image: url(./images/empty_arrow.png);
+       background-color: transparent;
+       background-repeat: no-repeat;
+       background-size: cover;
+       border: 0;
+       height: 32px;
+       width: 222px;
+       margin: 0 auto 6px;
+     }
+     .form-button-field {
+       width: 222px;
+       margin: 0 auto 6px;
+     }
+     #goutal-name,
+     #goutal-telephone,
+     #goutal-date {
+       background-color: transparent;
+       border: 0;
+       width: 188px;
+       height: 32px;
+       padding: 0 16px;
+     }
+     #goutal-shop,
+     #goutal-time {
+       background-color: transparent;
+       border: 0;
+       width: 188px;
+       height: 32px;
+       padding: 0 12px;
+     }
+     #goutal-submit {
+       background-image: url(./images/btn.png);
+       background-color: transparent;
+       background-repeat: no-repeat;
+       background-size: cover;
+       border: 0;
+       height: 32px;
+       width: 222px;
+       text-indent: -9999px;
+       cursor: pointer;
+     }
+     #goutal-submit:hover {
+       background-image: url(./images/btn_over.png);
+     }
+     select {
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       text-indent: 1px;
+       text-overflow: '';
+     }
+     select::-ms-expand {
+       display: none;
+     }
+     *:focus {
+       outline: none;
+     }
+    </style>
+  </head>
+  <body>
+    <img valign="top" src="images/goutal_story_01.jpg" width="100%" height="auto" alt=""/>
+    <img valign="top" src="images/goutal_story_02.jpg" width="100%" height="auto" alt=""/>
+    <img valign="top" src="images/goutal_story_03.jpg" width="100%" height="auto" alt=""/>
+    <div class="form-wrapper">
+      <form>
+        <!-- name -->
+        <div class="form-input-field">
+          <input type="text" placeholder="姓名" id="goutal-name">
+        </div>
+        <!-- telephone -->
+        <div class="form-input-field">
+          <input type="text" placeholder="電話" id="goutal-telephone">
+        </div>
+        <!-- shop -->
+        <div class="form-select-field">
+          <select id="goutal-shop">
+            <option value="0" value="0" selected disabled>選擇專門店</option>
+            <option value="香港羅素街">香港羅素街</option>
+            <option value="澳門威利斯人">澳門威利斯人</option>
+            <option value="澳門銀河">澳門銀河</option>
+          </select>
+        </div>
+        <!-- date -->
+        <div class="form-input-field">
+          <input type="text" placeholder="日期" id="goutal-date">
+        </div>
+        <!-- time -->
+        <div class="form-select-field">
+          <select id="goutal-time">
+            <option value="0" value="0" selected disabled>時間</option>
+            <option value="11:00 - 12:00">11:00 - 12:00</option>
+            <option value="12:00 - 13:00">12:00 - 13:00</option>
+            <option value="13:00 - 14:00">13:00 - 14:00</option>
+            <option value="14:00 - 15:00">14:00 - 15:00</option>
+            <option value="15:00 - 16:00">15:00 - 16:00</option>
+            <option value="16:00 - 17:00">16:00 - 17:00</option>
+            <option value="17:00 - 18:00">17:00 - 18:00</option>
+            <option value="18:00 - 19:00">18:00 - 19:00</option>
+            <option value="19:00 - 20:00">19:00 - 20:00</option>
+          </select>
+        </div>
+        <div class="form-button-field">
+          <button type="button" id="goutal-submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script>
+     $(function() {
+       var dp = $("#goutal-date").datepicker({
+         dateFormat: 'yy-mm-dd',
+         minDate: 0
+       });
 
-<body>
-  <h1>Test</h1>
-</body>
+       $('#goutal-submit').on('click', function() {
+         var name = $('#goutal-name').val();
+         var telephone = $('#goutal-telephone').val();
+         var shop = $('#goutal-shop').val();
+         var date = $('#goutal-date').val();
+         var time = $('#goutal-time').val();
+
+         if (!name || !telephone || !shop || !date || !time) {
+           alert("請填寫所有欄位。");
+           return;
+         }
+
+         var data = {
+           'entry.467960969': name,
+           'entry.1868492963': telephone,
+           'entry.174587729': shop,
+           'entry.151097574': dp.val(),
+           'entry.2140494726': time
+         };
+
+         $.ajax({
+           type: 'POST',
+           url: 'https://docs.google.com/forms/d/e/1FAIpQLSfnOkAH_b43K869Kv3XKdzAzqYCIsNUITRfvmI7OhL5uS1b8w/formResponse',
+           data: data,
+           contentType: 'application/json',
+           dataType: 'jsonp',
+           complete: function() {
+             alert('謝謝，我們會盡快與您聯繫。');
+           }
+         });
+       });
+     });
+    </script>
+  </body>
 </html>
